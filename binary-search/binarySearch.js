@@ -27,7 +27,7 @@ const binarySearch = (arr, target) => {
 };
 
 // console.log(binarySearch(arr, 909));
-const array2 = [50, 45, 40, 35, 30, 5, 10, 15, 20];
+const array2 = [50, 45, 40, 35, 30, -5, 10, 15, 20];
 
 const descendingSearch = (array, target) => {
     let start = 0;
@@ -64,4 +64,4 @@ const descendingSearch = (array, target) => {
 
     return "Targe is not found!";
 };
-console.log(descendingSearch(array2, 20));
+console.log(descendingSearch(array2, -5));
