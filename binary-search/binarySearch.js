@@ -42,15 +42,21 @@ const descendingSearch = (array, target) => {
         if (array[mid] === target) {
             return "Target is found index: " + mid;
         } else if (isAscending) {
+            // if array in ascending order then this code will execute
             if (array[mid] < target) {
+                // if target greater than array[mid] then this code will execute
                 start = mid + 1;
             } else {
+                // if target less than array[mid] then this code will execute
                 end = mid - 1;
             }
         } else {
+            // if array in descending order then this code will execute
             if (array[mid] < target) {
+                // if target value is greater than array[mid] then this code will execute
                 end = mid - 1;
             } else {
+                // if target value is less than array[mid] then this code will execute
                 start = mid + 1;
             }
         }
@@ -58,4 +64,4 @@ const descendingSearch = (array, target) => {
 
     return "Targe is not found!";
 };
-console.log(descendingSearch(array2, 15));
+console.log(descendingSearch(array2, 20));
