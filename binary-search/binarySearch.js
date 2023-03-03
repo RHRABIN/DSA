@@ -1,11 +1,14 @@
 const arr = [10, 20, 25, 30, 40, 45, 50, 60, 90, 99, 100];
 
 /**
+   
  * @note : condition for binary search: Input array must be sorted in ascending order or descending order
  * @step1 : take 3 variable for the first index, last index and mid index
  * @step2 : while loop condition is start <= end
  * @step3 : inside while loop we recalculate the mid index
  * @step4 : check the  target value for three step to get actual result
+ * 
+  
  */
 
 const binarySearch = (arr, target) => {
